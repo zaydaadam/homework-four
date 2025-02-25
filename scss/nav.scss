@@ -1,4 +1,15 @@
 @use "variables" as v;
+body.about nav {
+    .logo-name {
+        border: 2px solid black;
+        color: black;
+    }
+    border-bottom: solid 2px black;
+    color: black;
+    a{
+        color: black;
+    }
+}
 nav {
     // background-color: red;
     height:  80px;
@@ -6,12 +17,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    width: 100%;
+    width: 980px;
     max-width: v.$site-width;
     left: 50%;
     transform: translateX(-50%);
     z-index: 99;
     border-bottom: solid 2px white;
+    top: 0;
     // background-color: red;
     .logo {
         width: 101px;
@@ -61,7 +73,7 @@ nav {
         }
     }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 980px) {
     nav {
         flex-direction: column;
         height: auto;
